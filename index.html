@@ -5,27 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de índice de Massa Corporal</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="principal.js"></script>
 </head>
 <body>
     <header>
+
         <h1>Calculadora de Índice de Massa Corporal</h1>
         <p>Entenda melhor seu peso em relação a sua altura utilizando nossa calculadora de índice de massa corporal (IMC). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida valioso para avaliar dua vida e bem estar em geral</p>
     </header>
 
     <main>
-        <h2>Insira seus dados abaixo</h2>
+        
+        <fieldset>
+            <legend>Insira seus dados abaixo</legend>
+            <label for="radio-metric"><input type="radio" name="dados" id="radio-metric" checked>Metric</label>
+            <label for="radio-imperial"><input type="radio" name="dados" id="radio-imperial">Imperial</label>
+
+            
+        <form>
+            <label for="altura"><span>Altura</span></label>
+            <input type="text" name="alturadousuario" id="altura">
+
+            <label for="peso">Peso</label>
+            <input  onkeyup="calcular()"type="text" name="pesodousuario" id="peso">
+        </form>
+        </fieldset>
+        
+        <textarea name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
+
+
+
+        
+        
 
     </main>
 
-
-    <section>
-        <img src="imagens/imagem-mobile.png" alt="Imagem de Jovem em uma refeição saudável">
-        <h2>O que seu resultado IMC significa</h2>
-        <p>Uma faixa de IMC de 18,5 a 24,9 é considerada um 'peso saudável'. Manter um peso saudável pode diminuir suas chances de problemas de saúde mais tarde, como obesidade e diabetes tipo 2. Procure uma dieta nutritiva com teor reduzido de gordura e açúcar, incorporando frutas e vegetais em abundância. Além disso, esforce-se para praticar atividade física regular, idealmente cerca de 30 minutos diários durante cinco dias por semana.</p>
+        <section>
+            <img src="imagens/imagem-mobile.png" alt="Imagem de Jovem em uma refeição saudável">
+            <h2>O que seu resultado IMC significa</h2>
+            <p>Uma faixa de IMC de 18,5 a 24,9 é considerada um 'peso saudável'. Manter um peso saudável pode diminuir suas chances de problemas de saúde mais tarde, como obesidade e diabetes tipo 2. Procure uma dieta nutritiva com teor reduzido de gordura e açúcar, incorporando frutas e vegetais em abundância. Além disso, esforce-se para praticar atividade física regular, idealmente cerca de 30 minutos diários durante cinco dias por semana.</p>
+        
+        <div>
+            <h3>Alimentação saudável</h3>
+            <p>A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade, clareza mental e humor.</p>
+            <h3>Exercício regularmente</h3>
+            <p>O exercício melhora o condicionamento físico, ajuda no controle do peso, melhora o humor e reduz o risco de doenças, promovendo o bem-estar e a longevidade.</p>
+            <h3>Sono adequado</h3>
+            <p>O sono melhora a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo restauração e rejuvenescimento geral.</p>
+        </div>
     </section>
+
     
     <footer>
-
+        <div>
+            <h2>Limitações do IMC</h2>
+            <p>Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a medição pode não ser benéfica.</p>
+        </div>
+        <div>
+            <h4>Gênero</h4>
+            <p>O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade. Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
+        </div>
+        <div>
+            <h4>Idade</h4>
+            <p>Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC subestime o conteúdo de gordura corporal.</p>
+        </div>
+        <div>
+            <h4>Músculo</h4>
+            <p>O IMC pode classificar erroneamente indivíduos musculosos como sobrepeso ou obesos, pois não diferencia músculo de gordura.</p>
+        </div>
+        <div>
+            <h4>Gravidez</h4>
+            <p> As gestantes experimentam ganho de peso devido ao crescimento do bebê. Manter um IMC pré-gravidez saudável é aconselhável para minimizar os riscos à saúde da mãe e do filho.</p>
+        </div>
+        <div>
+            <h4>Corrida</h4>
+            <p>Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMCs mais baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou enfermeira clínica.</p>
+        </div>
     </footer>
+
+    
+- Abaixo do peso: IMC inferior a 18,5
+- Peso saudável: IMC 18,5 a 24,9
+- Excesso de peso: IMC 25 a 29,9
+- Obeso: IMC 30 ou mais
+
+
+//seleção dos elementos
+const alturaInput = document.querySelector("#altura")
+const pesoInput = document.querySelector("#peso")
+
+
+//funções
+
+//inicialização
+
+
+imc = massa / (altura)
 </body>
 </html>
