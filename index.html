@@ -7,36 +7,49 @@
     <title>Calculadora de índice de Massa Corporal</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="principal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Inter:wght@100;200;300 ; 400;500;600;700;800;900 & display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-
-        <h1>Calculadora de Índice de Massa Corporal</h1>
-        <p>Entenda melhor seu peso em relação a sua altura utilizando nossa calculadora de índice de massa corporal (IMC). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida valioso para avaliar dua vida e bem estar em geral</p>
-    </header>
-
-    <main>
+    <div class="header-menu">
+        <header>
+            <img src="imagens/icone-inicial.png" alt="">
+            <h1>Body Mass Calculator</h1>
+            <p>Entenda melhor seu peso em relação a sua altura utilizando nossa calculadora de índice de massa corporal (IMC). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida valioso para avaliar dua vida e bem estar em geral</p>
+        </header>
+        <main>
         
-        <fieldset>
-            <legend>Insira seus dados abaixo</legend>
-            <label for="radio-metric"><input type="radio" name="dados" id="radio-metric" checked>Metric</label>
-            <label for="radio-imperial"><input type="radio" name="dados" id="radio-imperial">Imperial</label>
+            <fieldset>
+                <legend>Insira seus dados abaixo</legend>
+                <input type="radio" name="dados" id="radio-metric" onchange="handleChange(this);" value="radio-metric">Metric
+                <input type="radio" name="dados" id="radio-imperial" onchange="handleChange(this);" value="radio-imperial">Imperial
+    </div>
 
+        
             
         <form>
-            <label for="altura"><span>Altura</span></label>
-            <input type="text" name="alturadousuario" id="altura">
+            <div id="radio-metric-bloco">
+                <label for="altura">Altura</label>
+                <input type="text" name="alturadousuario" id="altura" placeholder="Digite sua altura">
+                <label for="peso">Peso</label>
+                <input onkeyup="calcular()" type="text" name="pesodousuario" id="peso" placeholder="Digite seu peso">
+            </div>
 
-            <label for="peso">Peso</label>
-            <input  onkeyup="calcular()"type="text" name="pesodousuario" id="peso">
+            <div id="radio-imperal-bloco" style="display: none;">
+                <label for="altura">Altura</label>
+                <input type="text" name="alturadousuario" id="alturaft" placeholder="Digite sua altura">
+                <input type="text" name="alturadousuario" id="alturain" placeholder="Digite sua altura">
+
+                <label for="peso">Peso</label>
+                <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesost" placeholder="Digite seu peso">
+                <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs" placeholder="Digite seu peso">
+            </div>
         </form>
         </fieldset>
         
         <textarea name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
-
-
-
         
         
 
@@ -85,23 +98,7 @@
         </div>
     </footer>
 
-    
-- Abaixo do peso: IMC inferior a 18,5
-- Peso saudável: IMC 18,5 a 24,9
-- Excesso de peso: IMC 25 a 29,9
-- Obeso: IMC 30 ou mais
+    <script src="principal.js"></script>
 
-
-//seleção dos elementos
-const alturaInput = document.querySelector("#altura")
-const pesoInput = document.querySelector("#peso")
-
-
-//funções
-
-//inicialização
-
-
-imc = massa / (altura)
 </body>
 </html>
