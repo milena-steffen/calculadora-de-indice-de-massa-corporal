@@ -34,7 +34,7 @@ function calcular(){
     }
 
     var imc = (peso / (altura * altura));
-    var texto=`Seu IMC é... ${imc}`;
+    var texto=`Seu IMC é...  ${imc}`;
         if (imc <18.5){
             texto+="Abaixo do peso"
         } else if (imc <24.9){
@@ -47,6 +47,8 @@ function calcular(){
 
 
         document.getElementById("area-de-texto").innerText=texto;
+
+        //document.getElementById("area-de-texto").innerText=`Seu IMC é de <br> ${imc}</span><br>${texto}`;
    
 
 

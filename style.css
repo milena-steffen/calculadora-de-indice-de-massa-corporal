@@ -1,30 +1,226 @@
 @charset "UTF-8";
+
+
+
 body{
     font-family: 'Inter', sans-serif;
+    
 }
+
+.imagem-menu-principal{
+    padding: 32px 0px 24px 0px;
+    text-align: center;
+}
+
 .header-menu{
-background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 0px 0px 35px 35px;
+    padding: 0px 24px;
+    border-radius: 0px 0px 35px 35px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    border-radius: 0px 0px 35px 35px;
+    height: 640px;
 
 }
 
+.header__menu-inicial{
+    padding: 96px 24px 48px 24px;
+}
 
 h1{
-    font-style: normal ;
+    font-style: normal;
     font-weight: 600;
     font-size: 3em;
     line-height: 110%;
     text-align: center;
     letter-spacing: -0.05em;
     color: #253347;
+    padding-bottom: 24px;
 }
 
-p{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
+.paragrafo-primario{
+    color: #5E6E85;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+fieldset .formulario__imc{
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+    margin: -240px auto 0px;
+    width: 90%;
+    height: 649px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    
+}
+
+
+fieldset legend{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    padding-bottom: 24px;
+    text-align: center;
+    padding-top: 24px;
+    
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 2em;
+    height: 1.8em;
+    margin-right: 1em;
+    vertical-align: bottom;
+}
+
+.formulario__imc-espacamentos{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 1.2em;
+    align-self: stretch;
+    padding: 0px 28px 24px 28px;
+    justify-content: space-around;
+}
+
+#radio-metric-bloco{
+    display: flex;
+    flex-direction: column;
+}
+
+.dados-do-bloco-1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #5E6E85;
+    margin-inline-start: 10%;
+}
+
+.dados-do-bloco-2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #5E6E85;
+    margin-inline-start: 10%;
+    padding-top: 16px;
+}
+
+.input-do-bloco{
+    background: #FFFFFF;
+    margin: 8px auto;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    height: 4.30em;
+    width: 80%;
+}
+
+#area-de-texto{
+    background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: stretch;
+    height: 40%;
+    width: 80%;
+    top: 20px;
+    color: white;
+    margin: 0px auto;
+    border-radius: 16px;
+    font-size: 2em;
+}
+
+
+.segunda__sessao{
+    padding: 48px 24px 0px 24px;
+}
+
+
+.titulo-secundario{
+    font-style: normal;
+    color: #253347;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    padding-bottom: 32px;
+}
+
+.paragrafo-secundario{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+    text-align: left;
+    padding-bottom: 71.61px;
+}
+
+.sessao__saudabilidade{
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    
+}
+
+.sessao__saudabilidade__formatacao{
+    padding: 0px 24px 0px 24px;
+}
+
+.icone-alimentacao{
+    padding-top: 56px;
+    padding-bottom: 32px;
+    width: 64px;
+    height: 64px;
+}
+
+.titulo-terciario{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    padding-bottom: 24px;
+}
+
+.paragrafo-terciario{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 150%;
+    color: #5E6E85;
+    padding-bottom: 40px;
+}
+
+.icone-exercicio{
+    width: 64px;
+    height: 64px;
+    padding-bottom: 32px;
+}
+
+.icone-sono{
+    padding-bottom: 32px;
+}
+
+
+.titulo-quartenario{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 135px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #253347;
+}
+
+.divisao__footer{
+    padding: 0px 24px;;
 }

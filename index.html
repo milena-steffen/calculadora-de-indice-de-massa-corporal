@@ -15,69 +15,94 @@
 <body>
     <div class="header-menu">
         <header>
-            <img src="imagens/icone-inicial.png" alt="">
-            <h1>Body Mass Calculator</h1>
-            <p>Entenda melhor seu peso em relação a sua altura utilizando nossa calculadora de índice de massa corporal (IMC). Embora o IMC não seja o único determinante de um peso saudável, ele oferece um ponto de partida valioso para avaliar dua vida e bem estar em geral</p>
+            <div class="imagem-menu-principal">
+                <img src="imagens/icone-inicial.png" alt="Imagem "></div>
+
+            <div class="header-menu-principal">
+                <h1>Body Mass Index Calculator</h1>
+                <p class="paragrafo-primario">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+            </div>
         </header>
-        <main>
-        
+    </div>    
             <fieldset>
-                <legend>Insira seus dados abaixo</legend>
-                <input type="radio" name="dados" id="radio-metric" onchange="handleChange(this);" value="radio-metric">Metric
-                <input type="radio" name="dados" id="radio-imperial" onchange="handleChange(this);" value="radio-imperial">Imperial
-    </div>
+                <div class="formulario__imc">
+                    
+                        <legend>Insira seus dados abaixo</legend>
+                            <div class="formulario__imc-espacamentos">
 
-        
+                                <div><input type="radio" name="dados" id="radio-metric" onchange="handleChange(this);" value="radio-metric">Metric</div>
+                                <div><input type="radio" name="dados" id="radio-imperial" onchange="handleChange(this);" value="radio-imperial">Imperial</div>
+                            </div>
             
-        <form>
-            <div id="radio-metric-bloco">
-                <label for="altura">Altura</label>
-                <input type="text" name="alturadousuario" id="altura" placeholder="Digite sua altura">
-                <label for="peso">Peso</label>
-                <input onkeyup="calcular()" type="text" name="pesodousuario" id="peso" placeholder="Digite seu peso">
-            </div>
+                    <form>
+                        <div id="radio-metric-bloco">
+                            
+                            <label class="dados-do-bloco-1" for="altura">Altura</label>
+                            <input class="input-do-bloco" type="text" name="alturadousuario" id="altura" placeholder="Digite sua altura">
+                            
+                            <label class="dados-do-bloco-2" for="peso">Peso</label>
+                            <input class="input-do-bloco" onkeyup="calcular()" type="text" name="pesodousuario" id="peso" placeholder="Digite seu peso">
+                        </div>
 
-            <div id="radio-imperal-bloco" style="display: none;">
-                <label for="altura">Altura</label>
-                <input type="text" name="alturadousuario" id="alturaft" placeholder="Digite sua altura">
-                <input type="text" name="alturadousuario" id="alturain" placeholder="Digite sua altura">
-
-                <label for="peso">Peso</label>
-                <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesost" placeholder="Digite seu peso">
-                <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs" placeholder="Digite seu peso">
-            </div>
-        </form>
-        </fieldset>
-        
-        <textarea name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
-        
-        
-
-    </main>
+                        <div id="radio-imperal-bloco" style="display: none;">
+                            <label for="altura">Altura</label>
+                            <input type="text" name="alturadousuario" id="alturaft" placeholder="Digite sua altura">
+                            <input type="text" name="alturadousuario" id="alturain" placeholder="Digite sua altura">
+                            <label for="peso">Peso</label>
+                            <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesost" placeholder="Digite seu peso">
+                            <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs" placeholder="Digite seu peso">
+                        </div>
+                    
+                    </form>
+               
+                  
+                    <textarea name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
+            </fieldset>
+                </div>
+     
+    
+        </main>
 
         <section>
             <img src="imagens/imagem-mobile.png" alt="Imagem de Jovem em uma refeição saudável">
-            <h2>O que seu resultado IMC significa</h2>
-            <p>Uma faixa de IMC de 18,5 a 24,9 é considerada um 'peso saudável'. Manter um peso saudável pode diminuir suas chances de problemas de saúde mais tarde, como obesidade e diabetes tipo 2. Procure uma dieta nutritiva com teor reduzido de gordura e açúcar, incorporando frutas e vegetais em abundância. Além disso, esforce-se para praticar atividade física regular, idealmente cerca de 30 minutos diários durante cinco dias por semana.</p>
-        
-        <div>
-            <h3>Alimentação saudável</h3>
-            <p>A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade, clareza mental e humor.</p>
-            <h3>Exercício regularmente</h3>
-            <p>O exercício melhora o condicionamento físico, ajuda no controle do peso, melhora o humor e reduz o risco de doenças, promovendo o bem-estar e a longevidade.</p>
-            <h3>Sono adequado</h3>
-            <p>O sono melhora a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo restauração e rejuvenescimento geral.</p>
-        </div>
+            <div class="segunda__sessao">
+                <h2 class="titulo-secundario">O que seu resultado IMC significa</h2>
+                <p class="paragrafo-secundario">Uma faixa de IMC de 18,5 a 24,9 é considerada um 'peso saudável'. Manter um peso saudável pode diminuir suas chances de problemas de saúde mais tarde, como obesidade e diabetes tipo 2. Procure uma dieta nutritiva com teor reduzido de gordura e açúcar, incorporando frutas e vegetais em abundância. Além disso, esforce-se para praticar atividade física regular, idealmente cerca de 30 minutos diários durante cinco dias por semana.</p>
+            </div>    
+                   
+                
+                <div class="sessao__saudabilidade">
+                    <div class="sessao__saudabilidade__formatacao">
+                        <div class="alimentacao__saudavel">
+                            <div class="icone-alimentacao"><img src="imagens/icone-comer-saudavel.png" alt="Ícone alimentação saudável"></div>
+                            <h3 class="titulo-terciario">Alimentação saudável</h3>
+                            <p class="paragrafo-terciario">A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade, clareza mental e humor.</p>
+                        </div>
+                        <div class="exercicio__regularmente">
+                            <div class="icone-exercicio"><img src="imagens/icone-exercicio-regular.png" alt="Ícone exercício regularmente"></div>
+                            <h3 class="titulo-terciario">Exercício regularmente</h3>
+                            <p class="paragrafo-terciario">O exercício melhora o condicionamento físico, ajuda no controle do peso, melhora o humor e reduz o risco de doenças, promovendo o bem-estar e a longevidade.</p>
+                        </div>
+                        <div class="sono__adequado">
+                            <div class="icone-sono"><img src="imagens/icone-dormir-adequadamente.png" alt="Ícone sono adequado"></div>
+                            <h3 class="titulo-terciario">Sono adequado</h3>
+                            <p class="paragrafo-terciario">O sono melhora a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo restauração e rejuvenescimento geral.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
     </section>
 
     
     <footer>
-        <div>
-            <h2>Limitações do IMC</h2>
-            <p>Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a medição pode não ser benéfica.</p>
+        <div class="divisao__footer">
+            <h2 class="titulo-quartenario">Limitações do IMC</h2>
+            <p class="paragrafo-secundario">Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a medição pode não ser benéfica.</p>
         </div>
+        
         <div>
-            <h4>Gênero</h4>
+            <div><img src="imagens/icone-genero.svg" alt=""><h4>Gênero</h4></div>
             <p>O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade. Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
         </div>
         <div>
