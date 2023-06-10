@@ -200,6 +200,10 @@ input[type=radio] {
     padding-bottom: 40px;
 }
 
+.sessao__beneficios__footer{
+    padding: 24px 24px;
+}
+
 .icone-exercicio{
     width: 64px;
     height: 64px;
@@ -223,4 +227,77 @@ input[type=radio] {
 
 .divisao__footer{
     padding: 0px 24px;;
+}
+
+
+.sessao__genero{
+    padding: 24px 29px 0px 19px;
+    background: #FFFFFF;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+}
+
+.icone-genero, .icone-idade, .icone-musculo, .icone-gravidez, .icone-corrida{
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+.sessao__genero-icone-imagem, .sessao__idade-icone-imagem, .sessao__musculos-icone-imagem, .sessao__esporte-icone-imagem{
+    display: flex;
+    
+}
+
+.titulo-quinario{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    display: flex;
+    align-items: center;
+}
+
+.paragrafo-quartenario{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
+.sessao__idade{
+    padding: 24px 29px 0px 19px;
+    background: #FFFFFF;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.sessao__musculos{
+    padding: 24px 29px 0px 19px;
+    background: #FFFFFF;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.sessao__gravidez{
+    padding: 24px 29px 0px 19px;
+    background: #FFFFFF;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.sessao__esporte{
+    padding: 24px 29px 0px 19px;
+    background: #FFFFFF;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    margin-top: 16px;
 }
