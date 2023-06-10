@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 body{
     font-family: 'Inter', sans-serif;
     
@@ -51,13 +49,12 @@ fieldset .formulario__imc{
     position: relative;
     margin: 0 auto;
     background-color: white;
-    margin: -240px auto 0px;
+    margin: -210px auto 0px;
     width: 90%;
     height: 649px;
     border-radius: 16px;
     background-color: #FFFFFF;
     box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
-    
 }
 
 
@@ -115,13 +112,83 @@ input[type=radio] {
 }
 
 .input-do-bloco{
+    display: flex;
     background: #FFFFFF;
     margin: 8px auto;
     border: 1px solid #D8E2E7;
     border-radius: 12px;
     height: 4.30em;
     width: 80%;
+
 }
+
+.altura-bloco-imperial, .peso-bloco-imperial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.input-dados-altura-ft {
+    display: flex;
+    height: 4.30em;
+    background: #FFFFFF;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    width: 40%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.input-dados-altura-in {
+    display: flex;
+    height: 4.30em;
+    background: #FFFFFF;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    width: 40%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+
+.input-dados-peso-st {
+    display: flex;
+    height: 4.30em;
+    background: #FFFFFF;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    width: 40%;
+    margin-top: 8px;
+}
+
+.input-dados-peso-lbs{
+    display: flex;
+    height: 4.30em;
+    background: #FFFFFF;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    width: 40%;
+    margin-top: 8px;
+}
+
+.dados-bloco-imperial-1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #5E6E85;
+    margin-inline-start: 5%;
+}
+
+.dados-bloco-imperial-2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #5E6E85;
+    margin-inline-start: 5%;
+
+}
+
 
 #area-de-texto{
     background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);

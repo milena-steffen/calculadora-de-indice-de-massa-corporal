@@ -44,23 +44,27 @@
                             <input class="input-do-bloco" onkeyup="calcular()" type="text" name="pesodousuario" id="peso" placeholder="Digite seu peso">
                         </div>
 
+
                         <div id="radio-imperal-bloco" style="display: none;">
-                            <label for="altura">Altura</label>
-                            <input type="text" name="alturadousuario" id="alturaft" placeholder="Digite sua altura">
-                            <input type="text" name="alturadousuario" id="alturain" placeholder="Digite sua altura">
-                            <label for="peso">Peso</label>
-                            <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesost" placeholder="Digite seu peso">
-                            <input onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs" placeholder="Digite seu peso">
+                            <label class="dados-bloco-imperial-1" for="altura">Altura</label>
+
+                            <div class="altura-bloco-imperial">
+                                <input class="input-dados-altura-ft" type="text" name="alturadousuario" id="alturaft" placeholder="Digite sua altura">
+                                <input class="input-dados-altura-in"type="text" name="alturadousuario" id="alturain" placeholder="Digite sua altura">
+                            </div>
+
+                            <label class="dados-bloco-imperial-2" for="peso">Peso</label>
+                            <div class="peso-bloco-imperial">
+                                <input class="input-dados-peso-st" onkeyup="calcular()" type="text" name="pesodousuario" id="pesost" placeholder="Digite seu peso">
+                                <input class="input-dados-peso-lbs" onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs" placeholder="Digite seu peso">
+                            </div>
                         </div>
                     
                     </form>
                
-                  
                     <textarea name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
             </fieldset>
                 </div>
-     
-    
         </main>
 
         <section>
@@ -122,7 +126,7 @@
                 <p class="paragrafo-quartenario"> As gestantes experimentam ganho de peso devido ao crescimento do bebê. Manter um IMC pré-gravidez saudável é aconselhável para minimizar os riscos à saúde da mãe e do filho.</p>
             </div>
             <div class="sessao__esporte">
-                <div class="sessao__esporte-icone-imagem"><img class="icone-corrida" src="imagens/icone-corrida.svg" alt="ícone imagem corrida"><h4 class="titulo-quinario">Corrida</h4></div>
+                <div class="sessao__esporte-icone-imagem"><img class="icone-corrida" src="imagens/icone-corrida.svg" alt="ícone imagem esporte"><h4 class="titulo-quinario">Corrida</h4></div>
                 <p class="paragrafo-quartenario">Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMCs mais baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou enfermeira clínica.</p>
             </div>
         </div>
