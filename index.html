@@ -13,88 +13,81 @@
     
 </head>
 <body>
-    <div class="header-menu">
-        <header>
-            <div class="imagem-menu-principal">
-                <img src="imagens/icone-inicial.png" alt="Imagem "></div>
-
-            <div class="header-menu-principal">
-                <h1>Body Mass Index Calculator</h1>
-                <p class="paragrafo-primario">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
-            </div>
-        </header>
-    </div>    
-            <fieldset>
-                <div class="formulario__imc">
-                    
-                        <legend>Insira seus dados abaixo</legend>
-                            <div class="formulario__imc-espacamentos">
-
-                                <div class="dados-unidade">
-                                    <input type="radio" name="dados" id="radio-metric" onchange="handleChange(this);" value="radio-metric">Metric</div>
-                                <div class="dados-unidade">
-                                    <input type="radio" name="dados" id="radio-imperial" onchange="handleChange(this);" value="radio-imperial">Imperial</div>
-                            </div>
-            
-                    <form class="radio-metric">
-                        <div id="radio-metric-bloco">
-                            
-                            <div class="dados__responsivo">
-                                <label class="dados-do-bloco-1" for="altura">Altura</label>
-                                <div class="dados-numero-unidade">
-                                    <input class="input-do-bloco" type="text" name="alturadousuario" id="altura">
-                                    <p class="unidade-cm">cm</p>
-                                </div>
-                            </div>
-                            
-                            <div class="dados__responsivo">
-                                <label class="dados-do-bloco-2" for="peso">Peso</label>
-                                <div class="dados-numero-unidade">
-                                    <input class="input-do-bloco" onkeyup="calcular()" type="text" name="pesodousuario" id="peso">
-                                    <p class="unidade-kg">kg</p>
-                            </div>
-                            </div>
-                        </div>
-
-
-                        <div id="radio-imperal-bloco" style="display: none;">
-                            <label class="dados-bloco-imperial-1" for="altura">Altura</label>
-
-                            <div class="altura-bloco-imperial">
-
-                                <div class="dados-numero-unidade-imperial">
-                                    <input class="input-dados-altura-ft" type="text" name="alturadousuario" id="alturaft">
-                                    <p class="unidade-ft">ft</p>
-                                </div>
-
-                                <div class="dados-numero-unidade-imperial">
-                                    <input class="input-dados-altura-in"type="text" name="alturadousuario" id="alturain">
-                                    <p class="unidade-in">in</p>
-
-                                </div>
-                            </div>
-
-                            <label class="dados-bloco-imperial-2" for="peso">Peso</label>
-                            <div class="peso-bloco-imperial">
-
-                                <div class="dados-numero-unidade-imperial">
-                                    <input class="input-dados-peso-st" onkeyup="calcular()" type="text" name="pesodousuario" id="pesost">
-                                    <p class="unidade-st">st</p>
-                                </div>
-
-                                <div class="dados-numero-unidade-imperial">
-                                    <input class="input-dados-peso-lbs" onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs">
-                                    <p class="unidade-lbs">lbs</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </form>
-               
-                    <textarea class="area" name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
-            </fieldset>
+    <div class="cabecalho__desktop">
+        <div class="header-menu">
+            <header>
+                <div class="cabecalhodesktop">
+                    <div class="imagem-menu-principal">
+                        <img src="imagens/icone-inicial.png" alt="Imagem "></div>
+                    <div class="header-menu-principal">
+                        <h1 class="titulo">Body Mass Index Calculator</h1>
+                        <p class="paragrafo-primario">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+                    </div>
                 </div>
-        </main>
+            </header>
+        </div>
+                <fieldset>
+                    <div class="formulario__imc">
+        
+                            <legend>Insira seus dados abaixo</legend>
+                                <div class="formulario__imc-espacamentos">
+                                    <div class="dados-unidade">
+                                        <input type="radio" name="dados" id="radio-metric" onchange="handleChange(this);" value="radio-metric">Metric</div>
+                                    <div class="dados-unidade">
+                                        <input type="radio" name="dados" id="radio-imperial" onchange="handleChange(this);" value="radio-imperial">Imperial</div>
+                                </div>
+        
+                        <form class="radio-metric">
+                            <div id="radio-metric-bloco">
+        
+                                <div class="dados__responsivo">
+                                    <label class="dados-do-bloco-1" for="altura">Altura</label>
+                                    <div class="dados-numero-unidade">
+                                        <input class="input-do-bloco" type="text" name="alturadousuario" id="altura">
+                                        <p class="unidade-cm">cm</p>
+                                    </div>
+                                </div>
+        
+                                <div class="dados__responsivo">
+                                    <label class="dados-do-bloco-2" for="peso">Peso</label>
+                                    <div class="dados-numero-unidade">
+                                        <input class="input-do-bloco" onkeyup="calcular()" type="text" name="pesodousuario" id="peso">
+                                        <p class="unidade-kg">kg</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div id="radio-imperal-bloco" style="display: none;">
+                                <label class="dados-bloco-imperial-1" for="altura">Altura</label>
+                                <div class="altura-bloco-imperial">
+                                    <div class="dados-numero-unidade-imperial">
+                                        <input class="input-dados-altura-ft" type="text" name="alturadousuario" id="alturaft">
+                                        <p class="unidade-ft">ft</p>
+                                    </div>
+                                    <div class="dados-numero-unidade-imperial">
+                                        <input class="input-dados-altura-in"type="text" name="alturadousuario" id="alturain">
+                                        <p class="unidade-in">in</p>
+                                    </div>
+                                </div>
+                                <label class="dados-bloco-imperial-2" for="peso">Peso</label>
+                                <div class="peso-bloco-imperial">
+                                    <div class="dados-numero-unidade-imperial">
+                                        <input class="input-dados-peso-st" type="text" name="pesodousuario" id="pesost">
+                                        <p class="unidade-st">st</p>
+                                    </div>
+                                    <div class="dados-numero-unidade-imperial">
+                                        <input class="input-dados-peso-lbs" onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs">
+                                        <p class="unidade-lbs">lbs</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </form>
+        
+                        <textarea class="area" name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
+                </fieldset>
+                    </div>
+            </main>
+    </div>
 
         <section>
             <div class="resultado__imc">
@@ -140,39 +133,40 @@
     </section>
 
     <footer>
-        <div class="divisao__footer">
-            <h2 class="titulo-quartenario">Limitações do IMC</h2>
-            <p class="paragrafo-secundario">Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a medição pode não ser benéfica.</p>
-        </div>
-
-        <div class="sessao__beneficios__footer">
-            <div class="sessao__genero">
-                <div class="sessao__genero-icone-imagem"><img class="icone-genero" src="imagens/icone-genero.svg" alt="ícone imagem gênero"><h4 class="titulo-quinario">Gênero</h4></div>
-                <p class="paragrafo-quartenario">O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade. Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
+        <div class="resposividade__footer">
+            <div class="divisao__footer">
+                <h2 class="titulo-quartenario">Limitações do IMC</h2>
+                <p class="paragrafo-secundario">Embora o IMC seja frequentemente um indicador prático de peso saudável, ele não é adequado para todas as pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC e, em certos casos, a medição pode não ser benéfica.</p>
             </div>
-            <div class="sessao__idade">
-                <div class="sessao__idade-icone-imagem"><img class="icone-idade" src="imagens/icone-idade.svg" alt="ícone imagem idade"><h4 class="titulo-quinario">Idade</h4></div>
-                <p class="paragrafo-quartenario">Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC subestime o conteúdo de gordura corporal.</p>
-            </div>
-            <div class="sessao__musculos">
-                <div class="sessao__musculos-icone-imagem"><img class="icone-musculo" src="imagens/icone-musculo.svg" alt="ícone imagem músculo"><h4 class="titulo-quinario">Músculo</h4>
+            <div class="sessao__beneficios__footer">
+                <div class="sessao__genero">
+                    <div class="sessao__genero-icone-imagem"><img class="icone-genero" src="imagens/icone-genero.svg" alt="ícone imagem gênero"><h4 class="titulo-quinario">Gênero</h4></div>
+                    <p class="paragrafo-quartenario">O desenvolvimento e a composição da gordura corporal de meninas e meninos variam com a idade. Consequentemente, a idade e o sexo da criança são considerados ao avaliar seu IMC.</p>
                 </div>
-                <p class="paragrafo-quartenario">O IMC pode classificar erroneamente indivíduos musculosos como sobrepeso ou obesos, pois não diferencia músculo de gordura.</p>
-            </div>
-
-            <div class="sessao__gravidez">
-                <div class="sessao__musculos-icone-imagem"><img class="icone-gravidez" src="imagens/icone-gravidez.svg" alt="Ícone imagem gravidez"><h4 class="titulo-quinario">Gravidez</h4>
+                <div class="sessao__idade">
+                    <div class="sessao__idade-icone-imagem"><img class="icone-idade" src="imagens/icone-idade.svg" alt="ícone imagem idade"><h4 class="titulo-quinario">Idade</h4></div>
+                    <p class="paragrafo-quartenario">Em indivíduos idosos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC subestime o conteúdo de gordura corporal.</p>
                 </div>
-                <p class="paragrafo-quartenario"> As gestantes experimentam ganho de peso devido ao crescimento do bebê. Manter um IMC pré-gravidez saudável é aconselhável para minimizar os riscos à saúde da mãe e do filho.</p>
-            </div>
-            <div class="sessao__esporte">
-                <div class="sessao__esporte-icone-imagem"><img class="icone-corrida" src="imagens/icone-corrida.svg" alt="ícone imagem esporte"><h4 class="titulo-quinario">Corrida</h4></div>
-                <p class="paragrafo-quartenario">Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMCs mais baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou enfermeira clínica.</p>
+                <div class="sessao__musculos">
+                    <div class="sessao__musculos-icone-imagem"><img class="icone-musculo" src="imagens/icone-musculo.svg" alt="ícone imagem músculo"><h4 class="titulo-quinario">Músculo</h4>
+                    </div>
+                    <p class="paragrafo-quartenario">O IMC pode classificar erroneamente indivíduos musculosos como sobrepeso ou obesos, pois não diferencia músculo de gordura.</p>
+                </div>
+                <div class="sessao__gravidez">
+                    <div class="sessao__musculos-icone-imagem"><img class="icone-gravidez" src="imagens/icone-gravidez.svg" alt="Ícone imagem gravidez"><h4 class="titulo-quinario">Gravidez</h4>
+                    </div>
+                    <p class="paragrafo-quartenario"> As gestantes experimentam ganho de peso devido ao crescimento do bebê. Manter um IMC pré-gravidez saudável é aconselhável para minimizar os riscos à saúde da mãe e do filho.</p>
+                </div>
+                <div class="sessao__esporte">
+                    <div class="sessao__esporte-icone-imagem"><img class="icone-corrida" src="imagens/icone-corrida.svg" alt="ícone imagem esporte"><h4 class="titulo-quinario">Corrida</h4></div>
+                    <p class="paragrafo-quartenario">Certos problemas de saúde podem afetar indivíduos de algumas origens negras e asiáticas com IMCs mais baixos do que outros. Para saber mais, é aconselhável discutir isso com seu médico de família ou enfermeira clínica.</p>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="principal.js"></script>
+    <script src="sec.js"></script>
 
 </body>
 </html>

@@ -263,7 +263,7 @@ input{
     justify-content: space-around;
     align-self: stretch;
     height: 40%;
-    width: 80%;
+    width: 85%;
     top: 20px;
     color: white;
     margin: 0px auto;
@@ -438,29 +438,26 @@ input{
     fieldset .formulario__imc{
         margin: -330px auto 0px;
         width: 90%;
-        height: 450px;
+        height: 520px;
     }
     
     fieldset legend{
         text-align: left;
         padding-top: 24px;
         padding-left: 32px;
-    }*/
-    
-
+    }
     
     .formulario__imc-espacamentos{
         display: flex;
+        gap: 265px;
         justify-content: left;
         text-align: left;
-        
     }
 
     #radio-metric-bloco{
         display: flex;
         flex-direction: row;
     }
-
     
     .dados-numero-unidade{
         display: flex;
@@ -478,7 +475,6 @@ input{
         width: 80%;
     }
     
-    
     .input-do-bloco{
         display: flex;
         flex-direction: row;
@@ -486,10 +482,9 @@ input{
         width: 80%;
     }
     
-
    .area{
         height: 25%;
-        width: 92%;
+        width: 68%;
         top: 20px;
         color: white;
         margin: 0px auto;
@@ -501,7 +496,6 @@ input{
         display: flex;
         flex-direction: row;
         padding: 128px 0px 36px 0px;
-        
     }
 
     .imagens-pagina{
@@ -526,6 +520,11 @@ input{
     
     .paragrafo-secundario{
         padding: 0px 23px 10px 25px;
+    }
+
+    .sessao__saudabilidade{
+        background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+        
     }
 
     .alimentacao__saudavel, .exercicio__regularmente, .sono__adequado{
@@ -553,7 +552,6 @@ input{
         grid-template-columns: 40% 40%;
         gap: 20px;
         justify-content: center;
-
     }
     
     .sessao__genero{
@@ -565,7 +563,152 @@ input{
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 
+    .header-menu{
+        position: relative;
+        width: 978px;
+        height: 737px;
+        left: 24px;
+        top: -1px;
+        left: 24px;
+        top: 0px;
+        border-radius: 0px 0px 35px 35px;
+    }
+
+    .cabecalhodesktop{
+        
+    }
+
+    .cabecalho__desktop{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-menu-principal{
+        padding: 90px 450px 300px 40px;
+        
+    }
+
+    .titulo{
+        text-align: start;
     
+    }
+
+    .paragrafo-primario{
+        text-align: start;
+    }
+
+    fieldset legend{
+        padding-bottom: 32px;
+    }
+
+    fieldset .formulario__imc{
+        position: absolute;
+        width: 564px;
+        height: 580px;
+        left: 736px;
+        top: 430px;
+     
+    }   
+
+    .formulario__imc-espacamentos{
+        gap: 200px;
+        padding-bottom: 30px;
+        
+    }
+    .area{
+        width: 500px;
+        height: 166px;
+     }
+
+
+     .imagens-pagina{
+        position: relative;
+        width: 435px;
+        height: 411.09px;
+        left: 50px;
+        top: 0px;
+    }
+
+    .resultado__imc{
+        display: flex;
+        flex-direction: row;
+        padding: 50px 0px 36px 0px;
+    }
+
+    .segunda__sessao{
+        padding: 60px 140px 96px 140px;
+    }
+
+    .sessao__saudabilidade__formatacao{
+        display: flex;
+        flex-direction: row;
+        padding: 0 117px 0 117px;
+    
+    }
+    .alimentacao__saudavel, .exercicio__regularmente, .sono__adequado{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragrafo-terciario{
+      margin-right: 32px;
+    }
+
+    .resposividade__footer{
+        width: 564px;
+        height: 184px;
+        left: 140px;
+        top: 1952px;
+    }
+
+    .divisao__footer{
+        padding: 45px 24px;
+        margin-left: 30px;
+    }
+
+    .sessao__genero{
+        position: absolute;
+        width: 365px;
+        height: 217px;
+        top: 1600px;
+        left: 836px;
+    }
+
+    .sessao__idade{
+        position: absolute;
+        width: 365px;
+        height: 184px;
+        left: 538px;
+        top: 1900px;
+        
+        }
+    
+
+    .sessao__musculos{
+        position: absolute;
+        width: 365px;
+        height: 184px;
+        left: 1000px;
+        top: 1900px;
+    }
+
+    .sessao__gravidez{
+        position: absolute;
+        width: 365px;
+        height: 184px;
+        left: 800px;
+        top: 2150px;
+        
+    }
+
+    .sessao__esporte{
+        position: absolute;
+        width: 365px;
+        height: 184px;
+        left: 308px;
+        top: 2150px;
+        
+    }
 }
