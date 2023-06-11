@@ -30,18 +30,30 @@
                         <legend>Insira seus dados abaixo</legend>
                             <div class="formulario__imc-espacamentos">
 
-                                <div><input type="radio" name="dados" id="radio-metric" onchange="handleChange(this);" value="radio-metric">Metric</div>
-                                <div><input type="radio" name="dados" id="radio-imperial" onchange="handleChange(this);" value="radio-imperial">Imperial</div>
+                                <div class="dados-unidade">
+                                    <input type="radio" name="dados" id="radio-metric" onchange="handleChange(this);" value="radio-metric">Metric</div>
+                                <div class="dados-unidade">
+                                    <input type="radio" name="dados" id="radio-imperial" onchange="handleChange(this);" value="radio-imperial">Imperial</div>
                             </div>
             
-                    <form>
+                    <form class="radio-metric">
                         <div id="radio-metric-bloco">
                             
-                            <label class="dados-do-bloco-1" for="altura">Altura</label>
-                            <input class="input-do-bloco" type="text" name="alturadousuario" id="altura" placeholder="Digite sua altura">
+                            <div class="dados__responsivo">
+                                <label class="dados-do-bloco-1" for="altura">Altura</label>
+                                <div class="dados-numero-unidade">
+                                    <input class="input-do-bloco" type="text" name="alturadousuario" id="altura">
+                                    <p class="unidade-cm">cm</p>
+                                </div>
+                            </div>
                             
-                            <label class="dados-do-bloco-2" for="peso">Peso</label>
-                            <input class="input-do-bloco" onkeyup="calcular()" type="text" name="pesodousuario" id="peso" placeholder="Digite seu peso">
+                            <div class="dados__responsivo">
+                                <label class="dados-do-bloco-2" for="peso">Peso</label>
+                                <div class="dados-numero-unidade">
+                                    <input class="input-do-bloco" onkeyup="calcular()" type="text" name="pesodousuario" id="peso">
+                                    <p class="unidade-kg">kg</p>
+                            </div>
+                            </div>
                         </div>
 
 
@@ -49,48 +61,77 @@
                             <label class="dados-bloco-imperial-1" for="altura">Altura</label>
 
                             <div class="altura-bloco-imperial">
-                                <input class="input-dados-altura-ft" type="text" name="alturadousuario" id="alturaft" placeholder="Digite sua altura">
-                                <input class="input-dados-altura-in"type="text" name="alturadousuario" id="alturain" placeholder="Digite sua altura">
+
+                                <div class="dados-numero-unidade-imperial">
+                                    <input class="input-dados-altura-ft" type="text" name="alturadousuario" id="alturaft">
+                                    <p class="unidade-ft">ft</p>
+                                </div>
+
+                                <div class="dados-numero-unidade-imperial">
+                                    <input class="input-dados-altura-in"type="text" name="alturadousuario" id="alturain">
+                                    <p class="unidade-in">in</p>
+
+                                </div>
                             </div>
 
                             <label class="dados-bloco-imperial-2" for="peso">Peso</label>
                             <div class="peso-bloco-imperial">
-                                <input class="input-dados-peso-st" onkeyup="calcular()" type="text" name="pesodousuario" id="pesost" placeholder="Digite seu peso">
-                                <input class="input-dados-peso-lbs" onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs" placeholder="Digite seu peso">
+
+                                <div class="dados-numero-unidade-imperial">
+                                    <input class="input-dados-peso-st" onkeyup="calcular()" type="text" name="pesodousuario" id="pesost">
+                                    <p class="unidade-st">st</p>
+                                </div>
+
+                                <div class="dados-numero-unidade-imperial">
+                                    <input class="input-dados-peso-lbs" onkeyup="calcular()" type="text" name="pesodousuario" id="pesolbs">
+                                    <p class="unidade-lbs">lbs</p>
+                                </div>
                             </div>
                         </div>
                     
                     </form>
                
-                    <textarea name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
+                    <textarea class="area" name="area" id="area-de-texto" cols="30" rows="10">Seu IMC é...</textarea>
             </fieldset>
                 </div>
         </main>
 
         <section>
-            <img src="imagens/imagem-mobile.png" alt="Imagem de Jovem em uma refeição saudável">
-            <div class="segunda__sessao">
-                <h2 class="titulo-secundario">O que seu resultado IMC significa</h2>
-                <p class="paragrafo-secundario">Uma faixa de IMC de 18,5 a 24,9 é considerada um 'peso saudável'. Manter um peso saudável pode diminuir suas chances de problemas de saúde mais tarde, como obesidade e diabetes tipo 2. Procure uma dieta nutritiva com teor reduzido de gordura e açúcar, incorporando frutas e vegetais em abundância. Além disso, esforce-se para praticar atividade física regular, idealmente cerca de 30 minutos diários durante cinco dias por semana.</p>
-            </div>    
+            <div class="resultado__imc">
+                <div class="imagens-pagina">
+                    <source srcset="imagens/imagem-tablet.png" class="Imagem de Jovem em uma refeição saudável" media="(min-width: 768px)" width="100%">
+                    <img src="imagens/imagem-mobile.png" alt="Imagem de Jovem em uma refeição saudável">
+                </div>
+                <div class="segunda__sessao">
+                    <h2 class="titulo-secundario">O que seu resultado IMC significa</h2>
+                    <p class="paragrafo-secundario">Uma faixa de IMC de 18,5 a 24,9 é considerada um 'peso saudável'. Manter um peso saudável pode diminuir suas chances de problemas de saúde mais tarde, como obesidade e diabetes tipo 2. Procure uma dieta nutritiva com teor reduzido de gordura e açúcar, incorporando frutas e vegetais em abundância. Além disso, esforce-se para praticar atividade física regular, idealmente cerca de 30 minutos diários durante cinco dias por semana.</p>
+                </div>
+            </div>
                    
                 
                 <div class="sessao__saudabilidade">
                     <div class="sessao__saudabilidade__formatacao">
                         <div class="alimentacao__saudavel">
                             <div class="icone-alimentacao"><img src="imagens/icone-comer-saudavel.png" alt="Ícone alimentação saudável"></div>
-                            <h3 class="titulo-terciario">Alimentação saudável</h3>
-                            <p class="paragrafo-terciario">A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade, clareza mental e humor.</p>
+                            <div class="alimentacao-saudavel-formatacao">
+                                <h3 class="titulo-terciario">Alimentação saudável</h3>
+                                <p class="paragrafo-terciario">A alimentação saudável promove controle de peso, prevenção de doenças, melhor digestão, imunidade, clareza mental e humor.</p>
+                            </div>
                         </div>
+                        
                         <div class="exercicio__regularmente">
                             <div class="icone-exercicio"><img src="imagens/icone-exercicio-regular.png" alt="Ícone exercício regularmente"></div>
-                            <h3 class="titulo-terciario">Exercício regularmente</h3>
-                            <p class="paragrafo-terciario">O exercício melhora o condicionamento físico, ajuda no controle do peso, melhora o humor e reduz o risco de doenças, promovendo o bem-estar e a longevidade.</p>
+                            <div class="alimentacao-saudavel-formatacao">
+                                <h3 class="titulo-terciario">Exercício regularmente</h3>
+                                <p class="paragrafo-terciario">O exercício melhora o condicionamento físico, ajuda no controle do peso, melhora o humor e reduz o risco de doenças, promovendo o bem-estar e a longevidade.</p>
+                            </div>
                         </div>
                         <div class="sono__adequado">
                             <div class="icone-sono"><img src="imagens/icone-dormir-adequadamente.png" alt="Ícone sono adequado"></div>
-                            <h3 class="titulo-terciario">Sono adequado</h3>
-                            <p class="paragrafo-terciario">O sono melhora a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo restauração e rejuvenescimento geral.</p>
+                            <div >
+                                <h3 class="titulo-terciario">Sono adequado</h3>
+                                <p class="paragrafo-terciario">O sono melhora a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo restauração e rejuvenescimento geral.</p>
+                            </div>
                         </div>
                     </div>
                     
@@ -98,7 +139,6 @@
             </div>
     </section>
 
-    
     <footer>
         <div class="divisao__footer">
             <h2 class="titulo-quartenario">Limitações do IMC</h2>

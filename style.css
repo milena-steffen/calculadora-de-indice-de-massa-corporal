@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+
+/**{
+    border: 1px solid black !important;
+}*/
+
 body{
     font-family: 'Inter', sans-serif;
     
@@ -51,7 +56,7 @@ fieldset .formulario__imc{
     background-color: white;
     margin: -210px auto 0px;
     width: 90%;
-    height: 649px;
+    height: 669px;
     border-radius: 16px;
     background-color: #FFFFFF;
     box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
@@ -73,17 +78,17 @@ fieldset legend{
 
 input[type=radio] {
     border: 0px;
-    width: 2em;
-    height: 1.8em;
-    margin-right: 1em;
-    vertical-align: bottom;
+    width: 31px;
+    height: 31px;
+    margin-right: 15px;
+    vertical-align: middle;
 }
 
 .formulario__imc-espacamentos{
     display: flex;
     flex-direction: row;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 16px;
     align-self: stretch;
     padding: 0px 28px 24px 28px;
     justify-content: space-around;
@@ -111,65 +116,126 @@ input[type=radio] {
     padding-top: 16px;
 }
 
+input{
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+}
+
+.dados-numero-unidade{
+    display: flex;
+    position: relative;
+}
+
+.unidade-cm, .unidade-kg{
+    position: absolute;
+    top: 27px;
+    right: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #345FF6;
+}
+
+.dados-numero-unidade-imperial{
+    display: flex;
+    position: relative;
+}
+
+.unidade-st, .unidade-lbs, .unidade-in, .unidade-ft {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #345FF6;
+}
+
+
 .input-do-bloco{
     display: flex;
     background: #FFFFFF;
     margin: 8px auto;
     border: 1px solid #D8E2E7;
     border-radius: 12px;
-    height: 4.30em;
+    height: 69px;
     width: 80%;
-
+    text-align: left;
+    padding-left: 24px;
 }
+
 
 .altura-bloco-imperial, .peso-bloco-imperial{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
+    
+    
 }
 
 .input-dados-altura-ft {
     display: flex;
-    height: 4.30em;
+    height: 69px;
     background: #FFFFFF;
     border: 1px solid #D8E2E7;
     border-radius: 12px;
-    width: 40%;
+    width: 50%;
     margin-top: 8px;
     margin-bottom: 16px;
+    text-align: left;
+    padding-left: 24px;
+    margin: 10px auto;
 }
 
 .input-dados-altura-in {
     display: flex;
-    height: 4.30em;
+    height: 69px;
     background: #FFFFFF;
     border: 1px solid #D8E2E7;
     border-radius: 12px;
-    width: 40%;
+    width: 50%;
     margin-top: 8px;
     margin-bottom: 16px;
+    text-align: left;
+    padding-left: 24px;
+    margin: 10px auto;
+    
 }
 
 
 .input-dados-peso-st {
     display: flex;
-    height: 4.30em;
+    height: 69px;
     background: #FFFFFF;
     border: 1px solid #D8E2E7;
     border-radius: 12px;
-    width: 40%;
+    width: 50%;
     margin-top: 8px;
+    margin-bottom: 16px;
+    text-align: left;
+    padding-left: 24px;
+    margin: 10px auto;
 }
 
 .input-dados-peso-lbs{
     display: flex;
-    height: 4.30em;
+    height: 69px;
     background: #FFFFFF;
     border: 1px solid #D8E2E7;
     border-radius: 12px;
-    width: 40%;
+    width: 50%;
     margin-top: 8px;
+    margin-bottom: 16px;
+    text-align: left;
+    padding-left: 24px;
+    margin: 10px auto;
 }
 
 .dados-bloco-imperial-1{
@@ -177,7 +243,7 @@ input[type=radio] {
     font-weight: 400;
     font-size: 0.8em;
     color: #5E6E85;
-    margin-inline-start: 5%;
+    margin-inline-start: 8%;
 }
 
 .dados-bloco-imperial-2{
@@ -185,12 +251,11 @@ input[type=radio] {
     font-weight: 400;
     font-size: 0.8em;
     color: #5E6E85;
-    margin-inline-start: 5%;
-
+    margin-inline-start: 8%;
+    
 }
 
-
-#area-de-texto{
+.area{
     background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
     position: relative;
     display: flex;
@@ -205,7 +270,6 @@ input[type=radio] {
     border-radius: 16px;
     font-size: 2em;
 }
-
 
 .segunda__sessao{
     padding: 48px 24px 0px 24px;
@@ -262,7 +326,7 @@ input[type=radio] {
     font-style: normal;
     font-weight: 400;
     font-size: 1em;
-    line-height: 150%;
+    line-height: 29px;
     color: #5E6E85;
     padding-bottom: 40px;
 }
@@ -367,4 +431,141 @@ input[type=radio] {
     box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
     border-radius: 16px;
     margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    fieldset .formulario__imc{
+        margin: -330px auto 0px;
+        width: 90%;
+        height: 450px;
+    }
+    
+    fieldset legend{
+        text-align: left;
+        padding-top: 24px;
+        padding-left: 32px;
+    }*/
+    
+
+    
+    .formulario__imc-espacamentos{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        
+    }
+
+    #radio-metric-bloco{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    .dados-numero-unidade{
+        display: flex;
+        position: relative;
+    }
+
+    .unidade-st, .unidade-lbs, .unidade-in, .unidade-ft {
+        position: absolute;
+        top: 30px;
+        right: 95px;
+    }
+
+    .dados__responsivo{
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    
+    .input-do-bloco{
+        display: flex;
+        flex-direction: row;
+        background: #FFFFFF;
+        width: 80%;
+    }
+    
+
+   .area{
+        height: 25%;
+        width: 92%;
+        top: 20px;
+        color: white;
+        margin: 0px auto;
+        border-radius: 100px 999px 999px 100px;
+        font-size: 2em;
+    }
+
+    .resultado__imc{
+        display: flex;
+        flex-direction: row;
+        padding: 128px 0px 36px 0px;
+        
+    }
+
+    .imagens-pagina{
+        position: relative;
+        width: 435px;
+        height: 411.09px;
+        left: -50px;
+        top: 0px;
+    }
+    
+    .segunda__sessao{
+        padding: 0px 48px 0px 0px;
+    }
+    
+    
+    .titulo-secundario{
+        text-align: justify;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 23px;
+    }
+    
+    .paragrafo-secundario{
+        padding: 0px 23px 10px 25px;
+    }
+
+    .alimentacao__saudavel, .exercicio__regularmente, .sono__adequado{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sessao__saudabilidade__formatacao{
+        padding: 0 32px;
+    }
+    
+    .icone-alimentacao, .icone-exercicio, .icone-sono{
+        padding-top: 25px;
+        padding-right: 40px;
+        width: 64px;
+        height: 64px;
+    }
+    
+    .titulo-terciario{
+        padding-bottom: 24px;
+    }
+    
+    .sessao__beneficios__footer{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 20px;
+        justify-content: center;
+
+    }
+    
+    .sessao__genero{
+        padding: 24px 29px 0px 19px;
+        margin-top: 16px;
+        background: #FFFFFF;
+        box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+        border-radius: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    
 }
