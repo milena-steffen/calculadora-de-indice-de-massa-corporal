@@ -47,14 +47,15 @@ function handleChange(unidades) {
   function exibirresultado(imc) {
     var classificacao = classificarimc(imc);
     var resultado = document.getElementById("area-de-texto");
-    resultado.innerHTML = `Seu IMC é...&#13;&#10; ${imc.toFixed(2)}&#13;&#10;${classificacao}`;
+    resultado.innerHTML = `Seu IMC é...&#13;&#10;${imc.toFixed(2)}&#13;&#10;&#13;&#10${classificacao}`;
   }
+  
 
   function classificarimc(imc) {
     if (imc < 18.5) {
       return "Abaixo do peso";
     } else if (imc < 25) {
-      return "Saudável";
+      return "Peso normal";
     } else if (imc < 30) {
       return "Excesso de peso";
     } else {
