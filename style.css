@@ -449,42 +449,74 @@ input{
     
     .formulario__imc-espacamentos{
         display: flex;
-        gap: 265px;
+        gap: 240px;
+        padding-left: 7%;
         justify-content: left;
         text-align: left;
     }
 
     #radio-metric-bloco{
         display: flex;
-        flex-direction: row;
     }
-    
-    .dados-numero-unidade{
+
+    .radio-metric-responsivo{
         display: flex;
-        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .unidade-cm, .unidade-kg{
+        position: absolute;
+        top: 27px;
+        right: 75px;
+      
     }
 
     .unidade-st, .unidade-lbs, .unidade-in, .unidade-ft {
         position: absolute;
         top: 30px;
-        right: 95px;
+        right: 75px;
     }
 
     .dados__responsivo{
         margin: 0 auto;
         width: 80%;
+
     }
     
     .input-do-bloco{
         display: flex;
         flex-direction: row;
         background: #FFFFFF;
-        width: 80%;
+        width: 72%;
+    }
+
+    .input-dados-altura-ft {
+        height: 69px;
+        width: 73%;
+    }
+    
+    .input-dados-altura-in {
+        height: 69px;
+        width: 73%;
+    }
+    
+    
+    .input-dados-peso-st {
+        height: 69px;
+        width: 73%;
+        
+    }
+    
+    .input-dados-peso-lbs{
+        height: 69px;
+        width: 73%;
     }
     
    .area{
         height: 25%;
-        width: 68%;
+        width: 80%;
         top: 20px;
         color: white;
         margin: 0px auto;
